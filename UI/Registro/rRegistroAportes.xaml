@@ -33,7 +33,7 @@
             <Label Content=" "/>
             <StackPanel Orientation="Horizontal">
                 <Button x:Name="NuevoButto" Content="Nuevo" Click="NuevoButto_Click" Margin="5" />
-                <Button x:Name="GuardarButton" Content="Guardar" Click="" Margin="5"/>
+                <Button x:Name="GuardarButton" Content="Guardar" Click="GuardarButton_Click" Margin="5"/>
                 <Button x:Name="EliminarButton" Content="Eliminar" Click="EliminarButton_Click" Margin="5" />
             </StackPanel>
         </StackPanel>
