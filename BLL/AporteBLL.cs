@@ -19,7 +19,7 @@ namespace P1___Ap1___Julio_Cesar_20180771.BLL
             bool existente = false;
             try
             {
-                existente = contexto.Aportes.Any(async => async.AporteID == id);
+                existente = contexto.aportes.Any(async => async.AporteID == id);
 
             }
             catch (Exception)
@@ -165,7 +165,7 @@ namespace P1___Ap1___Julio_Cesar_20180771.BLL
             Contexto contexto = new Contexto();
             try
             {
-                listados = contexto.Aportes.ToList();
+                listados = contexto.aportes.ToList();
             }
             catch (Exception)
             {
