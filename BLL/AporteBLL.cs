@@ -7,7 +7,7 @@ using P1___Ap1___Julio_Cesar_20180771.DAL;
 using Microsoft.EntityFrameworkCore;
 using P1___Ap1___Julio_Cesar_20180771.UI.Registro;
 using P1___Ap1___Julio_Cesar_20180771.Entidades;
-
+using System.Linq.Expressions;
 
 namespace P1___Ap1___Julio_Cesar_20180771.BLL
 {
@@ -41,7 +41,7 @@ namespace P1___Ap1___Julio_Cesar_20180771.BLL
             bool paso = false;
             try
             {
-                contexto.Aportes.Add(aportes);
+                contexto.aportes.Add(aportes);
                 paso = contexto.SaveChanges() > 0;
             }
             catch (Exception)

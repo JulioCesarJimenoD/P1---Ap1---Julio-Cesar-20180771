@@ -8,10 +8,11 @@ namespace P1___Ap1___Julio_Cesar_20180771.BLL
 {
     public class UtilidadesBLL
     {
-        public static int ToInt(String valor)
+        public static int ToInt(string valor)
         {
             int retorno = 0;
             int.TryParse(valor, out retorno);
+            return retorno;
         }
     }
 }
