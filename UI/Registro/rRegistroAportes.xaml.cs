@@ -54,36 +54,31 @@ namespace P1___Ap1___Julio_Cesar_20180771.UI.Registro
             if (AporteIDTextBox.Text.Length == 0)
             {
                 valido = false;
-                MessageBox.Show("Campos vacios. Ingrese Id.", "Error",
-                    MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("Campos vacios. Ingrese Id.", "Error", MessageBoxButton.OK, MessageBoxImage.Warning);
 
             }
-            if (FechaDatePicker.Text.Length == 0)
+            if (FechaDate.Text.Length == 0)
             {
                 valido = false;
-                MessageBox.Show("Campos vacios. Selecione una fecha.", "Error",
-                    MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("Campos vacios. Selecione una fecha.", "Error", MessageBoxButton.OK, MessageBoxImage.Warning);
 
             }
             if (PersonaTextBox.Text.Length == 0)
             {
                 valido = false;
-                MessageBox.Show("Campos vacios. Ingrese una Persona.", "Error",
-                    MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("Campos vacios. Ingrese una Persona.", "Error", MessageBoxButton.OK, MessageBoxImage.Warning);
 
             }
             if (ConceptoTextBox.Text.Length == 0)
             {
                 valido = false;
-                MessageBox.Show("Campos vacios. Ingrese un concepto.", "Error",
-                    MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("Campos vacios. Ingrese un concepto.", "Error",MessageBoxButton.OK, MessageBoxImage.Warning);
 
             }
             if (MontoTextBox.Text.Length == 0)
             {
                 valido = false;
-                MessageBox.Show("Campos vacios. Ingrese un monto.", "Error",
-                    MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("Campos vacios. Ingrese un monto.", "Error", MessageBoxButton.OK, MessageBoxImage.Warning);
 
             }
             return valido;
@@ -99,8 +94,7 @@ namespace P1___Ap1___Julio_Cesar_20180771.UI.Registro
             else
             {
                 this.aportes = new Aportes();
-                MessageBox.Show("No se ha Encontrado", "Error",
-                    MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("No se ha Encontrado", "Error", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
             this.DataContext = this.aportes;
         }
@@ -115,12 +109,10 @@ namespace P1___Ap1___Julio_Cesar_20180771.UI.Registro
             if (AporteBLL.Eliminar(UtilidadesBLL.ToInt(AporteIDTextBox.Text)))
             {
                 Limpiar();
-                MessageBox.Show("Registro eliminado!", "Exito",
-                MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show("Registro eliminado!", "Exito", MessageBoxButton.OK, MessageBoxImage.Information);
             }
             else
-                MessageBox.Show("No fue posible eliminar", "Fallo",
-                MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("No fue posible eliminar", "Fallo", MessageBoxButton.OK, MessageBoxImage.Error);
         }
 
         private void GuardarButton_Click(object sender, RoutedEventArgs e)
@@ -131,13 +123,11 @@ namespace P1___Ap1___Julio_Cesar_20180771.UI.Registro
             if (paso)
             {
                 Limpiar();
-                MessageBox.Show("Transaccion exitosa!", "Exito",
-                   MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show("Transaccion exitosa!", "Exito", MessageBoxButton.OK, MessageBoxImage.Information);
             }
             else
             {
-                MessageBox.Show("Transaccion Fallida", "Fallo",
-                    MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Transaccion Fallida", "Fallo", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
     }

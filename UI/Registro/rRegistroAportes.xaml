@@ -10,24 +10,29 @@
         <StackPanel Margin="10">
             <Label Content="Aporte ID"/>
             <StackPanel Orientation="Horizontal">
-                <TextBox x:Name="AporteIDTextBox" Width="80" Height="25" />
+                <TextBox x:Name="AporteIDTextBox" Width="80" Height="25 "  Text="{Binding AporteID}" />
                 <Button x:Name="BuscarButton" Content="Buscar" Margin="5" Click="BuscarButton_Click" />
+            </StackPanel>
+
+            <Label Content="Fecha"/>
+            <StackPanel>
+                <DatePicker x:Name="FechaDate" Width="150" HorizontalAlignment="Left" Text="{Binding Fecha}"/>
             </StackPanel>
 
             <Label Content="Persona" />
             <StackPanel Orientation="Horizontal" >
-                <TextBox x:Name="PersonaTextBox" Width="200" Height="25" />
+                <TextBox x:Name="PersonaTextBox" Width="200" Height="25" Text="{Binding Persona}"/>
             </StackPanel>
 
             <Label Content="Concepto" />
             <StackPanel Orientation="Horizontal">
-                <TextBox x:Name="ConceptoTextBox" Width="200" Height="25" />
+                <TextBox x:Name="ConceptoTextBox"  Width="200" Height="25"  Text="{Binding Concepto}"/>
 
             </StackPanel>
 
             <Label Content="Monto" />
             <StackPanel Orientation="Horizontal">
-                <TextBox x:Name="MontoTextBox" Width="200" Height="25" />
+                <TextBox x:Name="MontoTextBox" Width="200" Height="25" Text="{Binding Monto}"/>
             </StackPanel>
 
             <Label Content=" "/>
