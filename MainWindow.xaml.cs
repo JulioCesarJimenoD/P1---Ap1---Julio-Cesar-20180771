@@ -37,10 +37,15 @@ namespace P1___Ap1___Julio_Cesar_20180771
             aportes.Show();
         }
 
-        private void ConsultaAporteMenuItem_Click(object sender, RoutedEventArgs e)
+        private void ConsultaMenuItem_Click(object sender, RoutedEventArgs e)
         {
             cAportes aportes = new cAportes();
             aportes.Show();
+        }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

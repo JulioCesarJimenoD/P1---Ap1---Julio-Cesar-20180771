@@ -128,7 +128,6 @@ namespace P1___Ap1___Julio_Cesar_20180771.BLL
             }
             catch (Exception)
             {
-
                 throw;
             }
             finally

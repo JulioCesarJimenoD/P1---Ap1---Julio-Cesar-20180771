@@ -12,8 +12,8 @@
                 <MenuItem Header="Registros" Click="MenuItem_Click">
                     <MenuItem Name="AportesMenuItem" Header="Registro de Aportes" Click="AportesMenuItem_Click" />
                 </MenuItem>
-                <MenuItem Header="Consultas" Click="MenuItem_Click_1">
-                    <MenuItem Name="ConsultaAporteMenuItem" Header="Consulta de Aportes" Click="ConsultaAporteMenuItem_Click" />
+                <MenuItem Header="Consultas" Click="MenuItem_Click">
+                    <MenuItem Name="ConsultaMenuItem" Header="Consulta de Aportes" Click="ConsultaMenuItem_Click" />
                 </MenuItem>
             </Menu>
             </StackPanel>
