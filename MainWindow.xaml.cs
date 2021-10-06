@@ -13,6 +13,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+using P1___Ap1___Julio_Cesar_20180771.UI.Consultas;
+using P1___Ap1___Julio_Cesar_20180771.UI.Registro;
+
 namespace P1___Ap1___Julio_Cesar_20180771
 {
     /// <summary>
@@ -23,6 +26,21 @@ namespace P1___Ap1___Julio_Cesar_20180771
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        
+      
+
+        private void AportesMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            rRegistroAportes aportes = new rRegistroAportes();
+            aportes.Show();
+        }
+
+        private void ConsultaAporteMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            cAportes aportes = new cAportes();
+            aportes.Show();
         }
     }
 }

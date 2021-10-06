@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:P1___Ap1___Julio_Cesar_20180771"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="400" Width="400">
     <Grid>
         <StackPanel>
             <Menu Height="20">
-                <MenuItem Header="Registros">
+                <MenuItem Header="Registros" Click="MenuItem_Click">
                     <MenuItem Name="AportesMenuItem" Header="Registro de Aportes" Click="AportesMenuItem_Click" />
                 </MenuItem>
-                <MenuItem Header="Consultas">
+                <MenuItem Header="Consultas" Click="MenuItem_Click_1">
                     <MenuItem Name="ConsultaAporteMenuItem" Header="Consulta de Aportes" Click="ConsultaAporteMenuItem_Click" />
                 </MenuItem>
             </Menu>
