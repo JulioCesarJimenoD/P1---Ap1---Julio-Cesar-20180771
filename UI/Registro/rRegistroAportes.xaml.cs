@@ -130,5 +130,10 @@ namespace P1___Ap1___Julio_Cesar_20180771.UI.Registro
                 MessageBox.Show("Transaccion Fallida", "Fallo", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
+
+        private void AporteIDTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

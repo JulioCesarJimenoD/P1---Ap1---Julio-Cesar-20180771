@@ -5,13 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:P1___Ap1___Julio_Cesar_20180771.UI.Registro"
         mc:Ignorable="d"
-        Title="rRegistroAportes" Height="320" Width="250">
+        Title="Registro Aportes" Height="373" Width="270">
     <Grid>
-        <StackPanel Margin="10">
+        <StackPanel Margin="5">
             <Label Content="Aporte ID"/>
             <StackPanel Orientation="Horizontal">
-                <TextBox x:Name="AporteIDTextBox" Width="80" Height="25 "  Text="{Binding AporteID}" />
-                <Button x:Name="BuscarButton" Content="Buscar" Margin="5" Click="BuscarButton_Click" />
+                <TextBox x:Name="AporteIDTextBox" Width="80" Height="25 "  Text="{Binding AporteId}" TextChanged="AporteIDTextBox_TextChanged" />
+                <Button x:Name="BuscarButton" Margin="5" Click="BuscarButton_Click">
+                    <StackPanel Orientation="Horizontal" Height="25" Width="70">
+                        <Image Source="/Resources/Buscar.png" />
+                        <Label Content="Buscar"/>
+                    </StackPanel>
+                </Button>
+
             </StackPanel>
 
             <Label Content="Fecha"/>
@@ -37,9 +43,28 @@
 
             <Label Content=" "/>
             <StackPanel Orientation="Horizontal">
-                <Button x:Name="NuevoButto" Content="Nuevo" Click="NuevoButto_Click" Margin="5" />
-                <Button x:Name="GuardarButton" Content="Guardar" Click="GuardarButton_Click" Margin="5"/>
-                <Button x:Name="EliminarButton" Content="Eliminar" Click="EliminarButton_Click" Margin="5" />
+                <Button x:Name="NuevoButton" Margin="5" Click="NuevoButto_Click">
+                    <StackPanel Orientation="Horizontal" Height="25" Width="70">
+                        <Image Source="/Resources/Nuevo.png" />
+                        <Label Content="Nuevo"/>
+
+                    </StackPanel>
+                </Button>
+                <Button x:Name="GuardarButton" Margin="5" Click="GuardarButton_Click">
+                    <StackPanel Orientation="Horizontal" Height="25" Width="70">
+                        <Image Source="/Resources/Guardar.png" />
+                        <Label Content="Buscar"/>
+                    </StackPanel>
+                </Button>
+
+                <Button x:Name="EliminarButton" Margin="5" Click="EliminarButton_Click">
+                    <StackPanel Orientation="Horizontal" Height="25" Width="75">
+                        <Image Source="/Resources/Eliminar.png" />
+
+                        <Label Content="Eliminar"/>
+
+                    </StackPanel>
+                </Button>
             </StackPanel>
         </StackPanel>
 

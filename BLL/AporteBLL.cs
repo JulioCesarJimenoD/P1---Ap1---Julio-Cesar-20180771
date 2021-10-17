@@ -19,7 +19,7 @@ namespace P1___Ap1___Julio_Cesar_20180771.BLL
             bool existente = false;
             try
             {
-                existente = contexto.aportes.Any(async => async.AporteID == id);
+                existente = contexto.aportes.Any(async => async.AporteId == id);
 
             }
             catch (Exception)
@@ -107,7 +107,7 @@ namespace P1___Ap1___Julio_Cesar_20180771.BLL
         }
         public static bool Guardar(Aportes aportes)
         {
-            if (!Existente(aportes.AporteID))
+            if (!Existente(aportes.AporteId))
             {
                 return Insertar(aportes);
             }

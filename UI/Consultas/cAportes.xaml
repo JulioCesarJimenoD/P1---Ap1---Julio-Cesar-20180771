@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:P1___Ap1___Julio_Cesar_20180771.UI.Consultas"
         mc:Ignorable="d"
-        Title="cAportes" Height="384" Width="655">
+        Title="Aportes" Height="384" Width="655">
     <Grid>
         <StackPanel Orientation="Vertical" Margin="10,5,10,0">
             <StackPanel Orientation="Horizontal" Height="58">
@@ -33,6 +33,7 @@
 
                 <Button x:Name="BuscarButton" Height="30" Width="85" Margin="0,20,0,0" Click="BuscarButton_Click">
                     <StackPanel Orientation="Horizontal">
+                        <Image Source="/Resources/Guardar.png" />
                         <Label Content="Buscar"/>
                     </StackPanel>
                 </Button>
